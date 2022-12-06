@@ -6,8 +6,10 @@ function App() {
       <h1>React Hooks</h1>
       <hr/>
       <div className="container">
-        <div className='row'>
-          <CounterApp />
+        <div className="row">
+          <div className="col-6">
+            <CounterApp />
+          </div>
         </div>
       </div>
     </div>
