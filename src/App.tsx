@@ -1,4 +1,5 @@
 import { CounterApp } from "./CounterApp/CounterApp"
+import { SimpleForm } from "./SimpleForm/SimpleForm"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="row">
           <div className="col-6">
             <CounterApp />
+            <SimpleForm />
           </div>
         </div>
       </div>
