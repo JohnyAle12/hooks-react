@@ -1,5 +1,6 @@
 import { CounterApp } from "./CounterApp/CounterApp"
 import { SimpleForm } from "./SimpleForm/SimpleForm"
+import { SimpleFormCustomHook } from "./SimpleForm/SimpleFormCustomHook"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <div className="col-6">
             <CounterApp />
             <SimpleForm />
+            <SimpleFormCustomHook />
           </div>
         </div>
       </div>
