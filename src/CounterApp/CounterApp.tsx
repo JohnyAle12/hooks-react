@@ -3,7 +3,7 @@ import useCounter from './hooks/useCounter';
 
 export const CounterApp = () => {
     const [count, setCount] = useState<number>(0);
-    const {coins, increment, deincrement} = useCounter(100);
+    const {count: coins, increment, deincrement} = useCounter(100);
 
     return (
         <>

@@ -1,18 +1,18 @@
 import { useState } from 'react';
  
-const useCounter = (initialCoins:  number) => {
-    const [coins, setCoins] = useState<number>(initialCoins);
+const useCounter = (initialCount:  number) => {
+    const [count, setCount] = useState<number>(initialCount);
 
     const increment = () => {
-        setCoins((coins) => coins+1)
+        setCount((count) => count+1)
     }
 
     const deincrement = () => {
-        setCoins((coins) => coins-1)
+        setCount((count) => count-1)
     }
 
     return {
-        coins,
+        count,
         increment,
         deincrement
     }
