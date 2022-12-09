@@ -1,4 +1,5 @@
 import { CounterApp } from "./CounterApp/CounterApp"
+import { MultiplesHooks } from "./MultiplesHooks/MultiplesHooks"
 import { SimpleForm } from "./SimpleForm/SimpleForm"
 import { SimpleFormCustomHook } from "./SimpleForm/SimpleFormCustomHook"
 
@@ -13,6 +14,7 @@ function App() {
             <CounterApp />
             <SimpleForm />
             <SimpleFormCustomHook />
+            <MultiplesHooks />
           </div>
         </div>
       </div>
