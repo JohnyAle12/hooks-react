@@ -35,6 +35,7 @@ export const MultiplesHooks = () => {
             <button className='btn btn-primary mt-2' onClick={ onNextQuote }>
                 Next quote
             </button>
+            <hr/>
         </>
     )
 }

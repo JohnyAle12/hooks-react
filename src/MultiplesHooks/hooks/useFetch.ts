@@ -15,7 +15,7 @@ export const useFetch = ( url: string ) => {
         hasErrors: false
     })
 
-    //! At thi date the endpoint the breaking bad doesnt work, it return 500 error so the data return is a test example json 
+    //! At this date the endpoint the breaking bad doesnt work, it return 500 error so the data return is a test example json 
     const getFetch = async() => {
 
         setState({

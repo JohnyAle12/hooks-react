@@ -1,4 +1,5 @@
 import { CounterApp } from "./CounterApp/CounterApp"
+import { FocusScreen } from "./FocusScren/FocusScreen"
 import { MultiplesHooks } from "./MultiplesHooks/MultiplesHooks"
 import { SimpleForm } from "./SimpleForm/SimpleForm"
 import { SimpleFormCustomHook } from "./SimpleForm/SimpleFormCustomHook"
@@ -15,6 +16,7 @@ function App() {
             <SimpleForm />
             <SimpleFormCustomHook />
             <MultiplesHooks />
+            <FocusScreen />
           </div>
         </div>
       </div>
