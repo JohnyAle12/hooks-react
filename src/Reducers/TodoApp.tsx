@@ -43,6 +43,15 @@ export const TodoApp = () => {
         dispatch(action);
     }
 
+    const handleToggleTodo = (todo: State) => {
+        const action: Action = {
+            type: '[TODO] Toogle todo',
+            payload: todo
+        }
+        
+        dispatch(action);
+    }
+
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos))
     }, [todos])
@@ -55,7 +64,7 @@ export const TodoApp = () => {
 
             <div className="row">
                 <div className="col-7">
-                    <TodoList todos={todos} onDeleteTodo={handleDeleteTodo} />
+                    <TodoList todos={todos} onDeleteTodo={handleDeleteTodo} onToggleTodo={handleToggleTodo} />
                 </div>
                 <div className="col-5">
                     <h4>Agregar tarea</h4>

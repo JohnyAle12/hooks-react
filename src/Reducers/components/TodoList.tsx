@@ -4,14 +4,20 @@ import { TodoItem } from './TodoItem'
 
 type Props = {
     todos: State[],
-    onDeleteTodo(todo: State): void
+    onDeleteTodo(todo: State): void,
+    onToggleTodo(todo: State): void
 }
 
-export const TodoList = ({todos, onDeleteTodo}: Props) => {
+export const TodoList = ({todos, onDeleteTodo, onToggleTodo}: Props) => {
   return (
     <ul className="list-group">
         { todos.map( todo => (
-            <TodoItem key={todo.id} todo={todo} onDeleteTodo={onDeleteTodo} />
+            <TodoItem 
+                key={todo.id} 
+                todo={todo} 
+                onDeleteTodo={onDeleteTodo}
+                onToggleTodo={onToggleTodo}
+            />
         )) }
     </ul>
   )
