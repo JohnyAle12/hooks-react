@@ -1,5 +1,6 @@
 import { CounterApp } from "./CounterApp/CounterApp"
 import { FocusScreen } from "./FocusScren/FocusScreen"
+import { CallbackHook } from "./Memos/CallbackHook"
 import { MemoHook } from "./Memos/MemoHook"
 import { Memorize } from "./Memos/Memorize"
 import { MultiplesHooks } from "./MultiplesHooks/MultiplesHooks"
@@ -21,6 +22,7 @@ function App() {
             <FocusScreen />
             <Memorize />
             <MemoHook />
+            <CallbackHook />
           </div>
         </div>
       </div>
