@@ -1,5 +1,6 @@
 import { CounterApp } from "./CounterApp/CounterApp"
 import { FocusScreen } from "./FocusScren/FocusScreen"
+import { Memorize } from "./Memos/Memorize"
 import { MultiplesHooks } from "./MultiplesHooks/MultiplesHooks"
 import { SimpleForm } from "./SimpleForm/SimpleForm"
 import { SimpleFormCustomHook } from "./SimpleForm/SimpleFormCustomHook"
@@ -17,6 +18,7 @@ function App() {
             <SimpleFormCustomHook />
             <MultiplesHooks />
             <FocusScreen />
+            <Memorize />
           </div>
         </div>
       </div>
