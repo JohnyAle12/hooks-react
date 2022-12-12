@@ -1,11 +1,4 @@
-import { CounterApp } from "./CounterApp/CounterApp"
-import { FocusScreen } from "./FocusScren/FocusScreen"
-import { CallbackHook } from "./Memos/CallbackHook"
-import { MemoHook } from "./Memos/MemoHook"
-import { Memorize } from "./Memos/Memorize"
-import { MultiplesHooks } from "./MultiplesHooks/MultiplesHooks"
-import { SimpleForm } from "./SimpleForm/SimpleForm"
-import { SimpleFormCustomHook } from "./SimpleForm/SimpleFormCustomHook"
+import { HooksReact } from "./HooksReact"
 
 function App() {
   return (
@@ -15,14 +8,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <CounterApp />
-            <SimpleForm />
-            <SimpleFormCustomHook />
-            <MultiplesHooks />
-            <FocusScreen />
-            <Memorize />
-            <MemoHook />
-            <CallbackHook />
+            <HooksReact />
           </div>
         </div>
       </div>
