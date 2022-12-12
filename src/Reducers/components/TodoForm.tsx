@@ -2,10 +2,10 @@ import { State } from '../types'
 import { useState } from 'react';
 
 type Props = {
-    handelForm(todos: State): void
+    onNewTodo(todos: State): void
 }
 
-export const TodoForm = ({handelForm}: Props) => {
+export const TodoForm = ({onNewTodo}: Props) => {
 
     const [input, setInput] = useState('');
 
@@ -13,7 +13,7 @@ export const TodoForm = ({handelForm}: Props) => {
         e.preventDefault();
         if (input.trim().length < 1) return;
 
-        handelForm({
+        onNewTodo({
             id: new Date().getTime(),
             description: input,
             done: false

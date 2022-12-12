@@ -11,7 +11,10 @@ export const todoReducer = (
                 action.payload
             ];
         break;
-        case 'Revisar financiación de cada equipo':
+        case '[TODO] Remove todo':
+            return state.filter(todo => todo.id !== action.payload.id);
+        break;
+        case '[TODO] Update todo':
             throw new Error('This action still doesnt work.')
         break;
     
