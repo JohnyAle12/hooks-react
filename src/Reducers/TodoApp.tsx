@@ -1,4 +1,4 @@
-import { useReducer } from 'react'
+import { useReducer, useEffect } from 'react';
 import { TodoForm } from './components/TodoForm';
 import { TodoList } from './components/TodoList';
 import { todoReducer } from './todoReducer';
@@ -17,9 +17,13 @@ const initialState: State[] = [
     }
 ];
 
+const init = (): [] => {
+    return JSON.parse(localStorage.getItem('todos') || '') || [];
+}
+
 export const TodoApp = () => {
 
-    const [todos, dispatch] = useReducer(todoReducer, initialState);
+    const [todos, dispatch] = useReducer(todoReducer, initialState, init);
 
     const handleNewTodo = (todo: State) => {
         const action: Action = {
@@ -30,6 +34,10 @@ export const TodoApp = () => {
         dispatch(action);
     }
 
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos))
+    }, [todos])
+    
     return (
         <>
             <div>TodoApp</div>
