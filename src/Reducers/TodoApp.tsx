@@ -8,13 +8,15 @@ export const TodoApp = () => {
         todos,
         handleDeleteTodo,
         handleToggleTodo,
-        handleNewTodo
+        handleNewTodo,
+        todosCount,
+        todosPendientCount
     } = useTodo();
 
     return (
         <>
             <div>TodoApp</div>
-            <div><small>Total(10) Pentientes (2)</small> </div>
+            <div><small>Total({ todosCount }) Pentientes ({ todosPendientCount })</small> </div>
             <hr />
 
             <div className="row">

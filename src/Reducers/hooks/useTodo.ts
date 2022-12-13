@@ -37,6 +37,9 @@ export const useTodo = () => {
         dispatch(action);
     }
 
+    const todosCount = todos.length;
+    const todosPendientCount = todos.filter( todo => todo.done ).length;
+
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos))
     }, [todos])
@@ -46,6 +49,8 @@ export const useTodo = () => {
         todos,
         handleDeleteTodo,
         handleToggleTodo,
-        handleNewTodo
+        handleNewTodo,
+        todosCount,
+        todosPendientCount
     }
 }
