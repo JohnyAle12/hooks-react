@@ -2,8 +2,14 @@ import { useReducer, useEffect } from 'react';
 import { todoReducer } from '../todoReducer';
 import { Action, State } from '../types';
 
+const initialState = [{
+    id: new Date().getTime(),
+    description: 'Inicial',
+    done: false
+}];
+
 const init = (): [] => {
-    return JSON.parse(localStorage.getItem('todos') || '') || [];
+    return JSON.parse(localStorage.getItem('todos') || JSON.stringify(initialState)) || [];
 }
 
 export const useTodo = () => {
