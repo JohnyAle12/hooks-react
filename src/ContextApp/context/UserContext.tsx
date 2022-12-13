@@ -1,3 +1,6 @@
 import { createContext } from "react";
+import { ContextApp } from "../types";
 
-export const UserContext = createContext({});
+const context: ContextApp = {}
+
+export const UserContext = createContext(context);

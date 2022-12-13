@@ -1,7 +1,14 @@
-import React from 'react'
+import { useContext } from 'react';
+import { UserContext } from './context/UserContext';
 
 export const HomeApp = () => {
-  return (
-    <div>HomeApp</div>
-  )
+
+    const { user } = useContext(UserContext);
+
+    return (
+        <>
+            <div>HomeApp</div>
+            <span>Current User: { user?.name } - { user?.email }</span>
+        </>
+    )
 }
