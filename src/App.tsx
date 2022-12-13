@@ -1,3 +1,4 @@
+import { MainApp } from "./ContextApp/MainApp"
 import { HooksReact } from "./HooksReact"
 import { TodoApp } from "./Reducers/TodoApp"
 
@@ -9,7 +10,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <TodoApp />
+            <MainApp />
           </div>
         </div>
       </div>
