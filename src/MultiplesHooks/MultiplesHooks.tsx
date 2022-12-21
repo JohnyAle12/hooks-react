@@ -1,5 +1,4 @@
 import { useFetch } from './hooks/useFetch'
-import { useState } from 'react';
 import useCounter from '../CounterApp/hooks/useCounter';
 
 export const MultiplesHooks = () => {
