@@ -15,7 +15,7 @@ export const Login = () => {
     return (
         <>
             <div>Login Page</div>
-            <p>Current User: { user?.name } - { user?.email }</p>
+            <p aria-label="user">Current User: { user?.name } - { user?.email }</p>
             <button
                 onClick={ () => setUser && setUser(newUser) }
                 className='btn btn-primary btn-sm'
