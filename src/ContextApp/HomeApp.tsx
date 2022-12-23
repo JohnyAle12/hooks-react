@@ -8,7 +8,7 @@ export const HomeApp = () => {
     return (
         <>
             <div>HomeApp</div>
-            <span>Current User: { user?.name } - { user?.email }</span>
+            <span aria-label="user">Current User: { user?.name } - { user?.email }</span>
         </>
     )
 }
